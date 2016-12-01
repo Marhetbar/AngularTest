@@ -5,18 +5,29 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { CoursesComponent } from './courses/courses.component';
+import { AuthorsComponent } from './authors/authors.component';
+import { AutoGrowDirective } from './auto-grow.directive';
+import { CourseService } from './courses/course.service';
+import { AuthorsService } from './authors/authors.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    CoursesComponent,
+    AuthorsComponent,
+    AutoGrowDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    CourseService, 
+    AuthorsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
