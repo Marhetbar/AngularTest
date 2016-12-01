@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CourseService } from './course.service';
+import { CoursesService } from './course.service';
 import {AutoGrowDirective} from '../auto-grow.directive';
 
 @Component({
@@ -23,7 +23,7 @@ export class CoursesComponent  {
   title = "The title of courses page";
   courses;
 
-  constructor(courseService: CourseService){
+  constructor(courseService: CoursesService){
       this.courses = courseService.getCourses();
   }
 
