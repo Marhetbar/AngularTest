@@ -4,8 +4,6 @@ import {AutoGrowDirective} from '../auto-grow.directive';
 
 @Component({
   selector: 'app-courses',
-  templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.css'],
   template: `
         <h2>Courses</h2>
         {{ title }}

@@ -4,8 +4,6 @@ import { AuthorsService } from './authors.service';
 
 @Component({
   selector: 'app-authors',
-  templateUrl: './authors.component.html',
-  styleUrls: ['./authors.component.css'],
   template:`
     <h3>Authors</h3>
         {{ author }}
